@@ -45,6 +45,6 @@ animacion = animation.FuncAnimation(figura, animate, init_func=init, interval=20
 
 plt.show()
 
-#anim.save('wave.mp4', fps=30)
+
 
 
