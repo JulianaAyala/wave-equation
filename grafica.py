@@ -21,6 +21,7 @@ ylabel("$Uinicial$")
 savefig("grafica")
 
 #procedimiento para la animacion
+n = 1000
 figura = plt.figure()
 ejes = plt.axes(xlim=(0, 1), ylim=(-1 , 1))
 line, = ejes.plot([], [], lw=4, c='red')
