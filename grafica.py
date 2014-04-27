@@ -16,7 +16,7 @@ uinicial = inicial[:,1]
 #grafico estos datos
 plot(x,uinicial)
 title("$Grafica$ $inicial$")
-xlabel("$x$")
+xlabel("$X$")
 ylabel("$Uinicial$")
 savefig("grafica")
 
