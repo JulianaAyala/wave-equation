@@ -18,7 +18,7 @@ plot(x,uinicial)
 title("$Grafica$ $inicial$")
 xlabel("$X$")
 ylabel("$Uinicial$")
-savefig("grafica")
+savefig("Grafica")
 
 #procedimiento para la animacion
 n = 1000
