@@ -25,10 +25,14 @@ int main(){
     int i,p;
     float paso;
     FILE *output;
+    FILE *out;
     
     /*creo archivos los cuales van a guardar los datos para la animacion*/
     char filename1[20]="datos_eqonda.dat";
     output=fopen(filename1,"a");
+    
+    char filename[20]="datos_iniciales.dat";
+    out=fopen(filename,"a");
     
     /*lleno las listas con los datos iniciales para tener la grafica de estos, para esto los guardo en un archivo aparte*/
     
@@ -36,6 +40,8 @@ int main(){
         paso = 1.0/n;
         x[i]=i*paso;
         uinicial[i] = exp(-((x[i]-0.3)*(x[i]-0.3))/0.01);
+        
+        fprintf(out, "%f %f\n", x[i], uinicial[i]);
         
     }
     
@@ -77,6 +83,7 @@ int main(){
 
 
     fclose(output);
+    fclose(out);
    
     return 0;
 }
